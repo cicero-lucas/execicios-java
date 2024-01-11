@@ -1,16 +1,23 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
+
 class Main {
+
   public static void main(String[] args) {
+
     Scanner sc= new Scanner(System.in);
+
     while(true){
+
       Menu();
       System.out.print("Digite sua Opção: ");
       int opc= sc.nextInt();
+
       if(opc==0){
          System.out.print("........................");
          break;
+         
       }else if(opc ==1){
         System.out.print("Digite a base: ");
         float b= sc.nextFloat();

@@ -1,4 +1,3 @@
-import javax.xml.crypto.dsig.spec.C14NMethodParameterSpec;
 
 public class Pessoa{
   private String nome;
@@ -41,15 +40,18 @@ public Pessoa(String nome,String marca,String modelo, String cor){
         System.out.println("Estou desenhando");
         c1.desenhar();
         this.energia=this.energia-30;
+
     }else if(this.fome<3){
       this.descansar();
       this.c1.tamparCaneta();
+
     }else{
       System.out.println("Você precisa se Alimentar");
     }
   }
 
   public void escrever(){
+
     if(this.energia>=10 ) {
       this.c1.destaparCaneta();
       System.out.println("Estou escrevendo");
@@ -59,6 +61,7 @@ public Pessoa(String nome,String marca,String modelo, String cor){
     }else if(this.fome<3){
       this.descansar();
       this.c1.tamparCaneta();
+      
     }else{
       System.out.println("Você precisa se Alimentar");
     }

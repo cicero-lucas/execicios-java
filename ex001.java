@@ -6,7 +6,9 @@ class Main {
     int b= sc.nextInt();
 
     int soma=a+b;
+
     System.out.println(soma);
+    sc.close();
   }
 
   

@@ -4,6 +4,7 @@ public class Caneta{
   private  String cor;
   private int cargar;
   private boolean tampada;
+
   //Construtor;
   public Caneta(){
     this.tampada=true;
@@ -49,20 +50,20 @@ public class Caneta{
 
   public void status(){
     System.out.println("------------------------------");
-    System.out.printf("Marcar: %s \n Modelo: %s \n Cor: %s\n tampa: %s \n Carga: %s \n\n",       this.marca, this.modelo, this.cor, this.tampada, this.cargar);
+    System.out.printf("Marcar: %s \n Modelo: %s \n Cor: %s\n Tampa: %s \n Carga: %s \n\n",       this.marca, this.modelo, this.cor, this.tampada, this.cargar);
     System.out.println("-------------------------------");
   }
 
   public void desenhar(){
     if(this.tampada==true || this.getCargar()<20){
-      System.out.println("Caneta tampada");
+      System.out.println("A Caneta está tampada");
     }else{
       this.cargar=getCargar()-20;
     }
   }
   public void escrever(){
     if(this.tampada==true || this.getCargar()<10){
-      System.out.println("Caneta tampada");
+      System.out.println("A Caneta está tampada");
     }else{
       this.cargar=getCargar()-10;
     }
